@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-
 export default function Home() {
   return (
     <main className="h-screen flex flex-col items-center justify-center">
@@ -18,9 +17,9 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <Image
-              src="/mountain.jpg"
-              alt="mountain"
-              width={1080}
+              src="/baseball.jpg"
+              alt="yosemite"
+              width={920}
               height={1080}
             />
           </motion.div>
