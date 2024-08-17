@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className= {roboto_mono.className}>{children}</body>
+      <body className={roboto_mono.className}>{children}</body>
     </html>
   );
 }

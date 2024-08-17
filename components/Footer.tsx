@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="uppercase flex flex-col justify-end col-span-2">
-          <a>Made with Nextjs, Tailwindcss, Typescript, and Framermotion</a>
+          <a>Made with Next.js, Tailwindcss, Typescript, and Framer Motion</a>
         </div>
       </div>
     </footer>

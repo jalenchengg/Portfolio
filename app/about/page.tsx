@@ -6,27 +6,28 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="flex flex-col bg-gray-200">
+    <div className="flex flex-col sm:px-6 md:px-16 relative bg-gray-200 min-h-screen">
       <Navbar />
-      <main className="flex flex-row min-h-screen items-center justify-between md:px-24 pt-13 w-full">
-        <div>
-          <h2 className="font-display text-3xl mb-6">
+      <main className="w-full md:min-h-screen flex flex-col items-start justify-center mt-24 sm:mt-16 md:mt-24">
+        <div className="py-16px md:py-0">
+          <h2 className="font-display text-3xl leading-none mb-6">
             <span>Designer &amp; Developer</span>
           </h2>
           <p className="animate-fade text-lg max-w-xs">
             Currently studying computer science @ UCI.
           </p>
         </div>
-        <div className="flex justify-end px-44">
+        <div className="flex justify-center md:justify-end px-0 md:px-44 mt-6 md:mt-0">
           <Image
             src="/laview.jpg"
             alt="Picture of the author"
             width={500}
             height={500}
+            className="w-72 h-72 md:w-96 md:h-96 object-cover"
           />
         </div>
       </main>
-      <div className="relativew-full min-h-screen"></div>
+      <div className="relative w-full min-h-screen"></div>
       <Footer />
     </div>
   );
