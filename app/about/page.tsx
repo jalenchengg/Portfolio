@@ -14,7 +14,7 @@ export default function Page() {
             <span>Designer &amp; Developer</span>
           </h2>
           <p className="animate-fade text-lg max-w-xs">
-            Currently studying computer science @ UCI.
+            Currently studying computer science @ MTSAC.
           </p>
         </div>
         <div className="flex justify-center md:justify-end px-0 md:px-44 mt-6 md:mt-0">
