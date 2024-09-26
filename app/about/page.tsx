@@ -20,13 +20,13 @@ export default function Page() {
           />
         </div>
         <div className="text-lg mx-16 md:mx-0 md:text-left text-center">
-          I'm Jalen [jay-lin], the creative force behind the designs. Whether
-          it's web, UI, product, or editorial work, my passion for design ties
+          I&apos;m Jalen [jay-lin], the creative force behind the designs. Whether
+          it&apos;s web, UI, product, or editorial work, my passion for design ties
           it all together. I thrive on crafting beautiful digital experiences
           and bringing ideas to life. I take great pride in blending elegance
           with practicality, allowing me to create meaningful digital solutions
           that truly resonate with users. You can explore some of the companies
-          I've collaborated with. Fun fact: I'm also a photography enthusiast!
+          I&apos;ve collaborated with. Fun fact: I&apos;m also a photography enthusiast!
         </div>
         <Footer />
       </div>
