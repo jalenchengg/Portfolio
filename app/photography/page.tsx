@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Gallery = () => {
   const [view, setView] = useState("grid");
@@ -17,8 +18,8 @@ const Gallery = () => {
     {
       src: "/image2.jpg",
       alt: "Image 2",
-      title: "Title 2",
-      description: "Description 2",
+      title: "PC_02",
+      description: "Los Angeles | Beaudry Ave",
     },
     {
       src: "/image3.jpg",
@@ -43,6 +44,30 @@ const Gallery = () => {
       alt: "Image 6",
       title: "PC_06",
       description: "SpaceX / Falcon 9",
+    },
+    {
+      src: "/image7.jpg",
+      alt: "Image 7",
+      title: "PC_07",
+      description: "Ohtani Home Run / Dodger Stadium",
+    },
+    {
+      src: "/image8.jpg",
+      alt: "Image 8",
+      title: "PC_08",
+      description: "BMW G80 M3 / Car Meet",
+    },
+    // {
+    //   src: "/image9.jpg",
+    //   alt: "Image 9",
+    //   title: "PC_09",
+    //   description: "BMW G80 M3 / Car Meet",
+    // },
+    {
+      src: "/image10.jpg",
+      alt: "Image 10",
+      title: "PC_10",
+      description: "BMW G80 M3 / Car Meet",
     },
   ];
 
@@ -90,6 +115,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

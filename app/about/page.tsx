@@ -6,29 +6,30 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="flex flex-col sm:px-6 md:px-16 relative bg-gray-200 min-h-screen">
+    <>
       <Navbar />
-      <main className="w-full md:min-h-screen flex flex-col items-start justify-center mt-24 sm:mt-16 md:mt-24">
-        <div className="py-16px md:py-0">
-          <h2 className="font-display text-3xl leading-none mb-6">
-            <span>Designer &amp; Developer</span>
-          </h2>
-          <p className="animate-fade text-lg max-w-xs">
-            Currently studying computer science @ MTSAC.
-          </p>
-        </div>
-        <div className="flex justify-center md:justify-end px-0 md:px-44 mt-6 md:mt-0">
+      <div className="grid max-w-3xl gap-4 mx-auto md:grid-cols-2 mt-32 justify-center">
+        <div className="relative flex justify-center">
+          {" "}
           <Image
-            src="/laview.jpg"
-            alt="Picture of the author"
-            width={500}
-            height={500}
-            className="w-72 h-72 md:w-96 md:h-96 object-cover"
+            src="/image11.jpg"
+            alt="Jalen Cheng"
+            width={433}
+            height={649}
+            className="rounded-lg md:w-max w-64"
           />
         </div>
-      </main>
-      <div className="relative w-full min-h-screen"></div>
-      <Footer />
-    </div>
+        <div className="text-lg mx-16 md:mx-0 md:text-left text-center">
+          I'm Jalen [jay-lin], the creative force behind the designs. Whether
+          it's web, UI, product, or editorial work, my passion for design ties
+          it all together. I thrive on crafting beautiful digital experiences
+          and bringing ideas to life. I take great pride in blending elegance
+          with practicality, allowing me to create meaningful digital solutions
+          that truly resonate with users. You can explore some of the companies
+          I've collaborated with. Fun fact: I'm also a photography enthusiast!
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }

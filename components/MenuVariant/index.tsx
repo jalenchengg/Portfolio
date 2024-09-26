@@ -5,7 +5,7 @@ import { perspective, slideIn } from "./anim";
 
 export default function Index() {
   return (
-    <div className="flex flex-col justify-between p-[100px_40px_50px_40px] h-full box-border">
+    <div className="flex flex-col justify-end p-[100px_40px_50px_40px] h-full box-border">
       <div className="flex flex-col gap-2.5">
         {links.map((link, i) => {
           const { title, href } = link;

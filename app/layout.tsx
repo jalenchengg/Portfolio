@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={roboto_mono.className}>{children}</body>
+      <link rel="shortcut icon" href="../pig.ico" />
     </html>
   );
 }
