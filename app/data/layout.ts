@@ -11,3 +11,5 @@ export const layoutPattern = [
    { span: 2 },                 // another big wide
 
 ];
+
+export default layoutPattern;
