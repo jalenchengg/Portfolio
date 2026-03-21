@@ -8,7 +8,7 @@ export default function Home() {
   const images = Array(12).fill("/m2 main.jpg");
 
   return (
-    <div className=" bg-[#ffffe7]">
+    <div className="">
       <Navbar />
       <section className="relative flex flex-col items-center justify-center h-screen pt-24">
         <CircularGallery images={images} radius={230} speed={50} />
