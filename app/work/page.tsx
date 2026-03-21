@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { clients, ClientKey } from "@/app/data/clients";
-import { layoutPattern } from "@/app/data/layout";
+import { layoutPattern } from "@/app/data/patterns";
 import FilterColumn from "@/components/Filter/FilterColumn";
 import PhotoCard from "@/components/PhotoCard";
 import Navbar from "@/components/navbar";
