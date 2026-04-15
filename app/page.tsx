@@ -5,7 +5,7 @@ import CircularGallery from "@/components/circulargallery";
 import Footer from "@/components/footer";
 
 export default function Home() {
-  const images = Array(12).fill("/m2 main.jpg");
+  const images = Array(12).fill("/main.jpg");
 
   return (
     <div className="">

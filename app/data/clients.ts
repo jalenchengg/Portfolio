@@ -29,16 +29,16 @@ export const clients = {
       "/DRIFT/drift1.jpg",
     ],
   },
-  sony: {
-    name: "Sony",
-    description: "Precision imaging and cinematic technology.",
-    photos: [],
-  },
-  canon: {
-    name: "Canon",
-    description: "Photography tools built for professionals.",
-    photos: [],
-  },
+  // sony: {
+  //   name: "Sony",
+  //   description: "Precision imaging and cinematic technology.",
+  //   photos: [],
+  // },
+  // canon: {
+  //   name: "Canon",
+  //   description: "Photography tools built for professionals.",
+  //   photos: [],
+  // },
 };
 
 export type ClientKey = keyof typeof clients;

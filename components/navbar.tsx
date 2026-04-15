@@ -85,6 +85,22 @@ export default function Navbar() {
         <div className="flex justify-end items-start">
           {/* Desktop links */}
           <div className="hidden md:flex flex-col uppercase text-xs font-medium">
+            <Link href="/visuals" className="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="7"
+                viewBox="0 0 9 7"
+                fill="none"
+                className="mr-2 -translate-y-1/2"
+              >
+                <path
+                  d="M8.69387 3.69631C8.87294 3.51724 8.87294 3.2269 8.69387 3.04783L5.77572 0.129688C5.59665 -0.0493837 5.30632 -0.0493837 5.12725 0.129688C4.94817 0.30876 4.94817 0.599093 5.12725 0.778165L7.72115 3.37207L5.12725 5.96598C4.94817 6.14505 4.94817 6.43538 5.12725 6.61445C5.30632 6.79353 5.59665 6.79353 5.77572 6.61445L8.69387 3.69631ZM0.3396 3.83061L8.36963 3.83061L8.36963 2.91353L0.3396 2.91353L0.3396 3.83061Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>Visuals</span>
+            </Link>
             <Link href="/work" className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
