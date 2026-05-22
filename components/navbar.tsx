@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const menuLinks = [
   { href: "/", label: "Home" },
+  { href: "/visuals", label: "Visuals" },
   { href: "/work", label: "Work" },
   { href: "/about", label: "About" },
 ];

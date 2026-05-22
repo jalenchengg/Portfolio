@@ -1,19 +1,44 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/navbar";
-import CircularGallery from "@/components/circulargallery";
+import GravityWall from "@/components/GravityWall";
 import Footer from "@/components/footer";
 
 export default function Home() {
-  const images = Array(12).fill("/main.jpg");
+  const [loading, setLoading] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const hasPlayed = sessionStorage.getItem("loaderPlayed");
+    setLoading(!hasPlayed);
+  }, []);
+
+  const handleComplete = () => {
+    sessionStorage.setItem("loaderPlayed", "true");
+    setLoading(false);
+  };
+
+  // Avoid flash while checking sessionStorage
+  if (loading === null) return null;
 
   return (
-    <div className="">
-      <Navbar />
-      <section className="relative flex flex-col items-center justify-center h-screen pt-24">
-        <CircularGallery images={images} radius={230} speed={50} />
-      </section>
-      <Footer />
-    </div>
+    <>
+      {loading && <LoadingScreen onComplete={handleComplete} />}
+
+      <div
+        className="min-h-screen bg-[#F0E8D8]"
+        style={{
+          opacity: loading ? 0 : 1,
+          transition: loading === false ? "opacity 0.4s ease 0.1s" : "none",
+        }}
+      >
+        <Navbar />
+        <section className="pt-24">
+          <GravityWall />
+        </section>
+        <Footer />
+      </div>
+    </>
   );
 }
